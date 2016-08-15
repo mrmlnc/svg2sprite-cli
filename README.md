@@ -7,7 +7,7 @@
 ## Install
 
 ```shell
-$ npm i -D svg2sprite-cli
+$ npm i -g svg2sprite-cli
 ```
 
 ## Usage
