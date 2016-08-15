@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: My hands -- version 2.0.0 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128" sketch:type="sketch">
+
+  <style><![CDATA[
+    .circle {
+      fill: #f2f2f2;
+      stroke: #ddd;
+      stroke-width: 4px;
+    }
+  ]]></style>
+
+  <title>Title</title>
+  <desc>Description</desc>
+
+  <g>
+    <circle class="circle" cx="64" cy="64" r="60"></circle>
+    <rect x="24" y="24" width="80" height="80" fill="#ccc"></rect>
+    <rect x="32" y="32" width="64" height="64" style="fill: #ddd; stroke-width: 2px; stroke: #f2f2f2;"></rect>
+  </g>
+
+</svg>
