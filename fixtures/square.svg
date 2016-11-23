@@ -3,21 +3,26 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128" sketch:type="sketch">
 
-  <style><![CDATA[
-    .square {
-      fill: #f2f2f2;
-      stroke: #ddd;
-      stroke-width: 4px;
-    }
-  ]]></style>
+	<style><![CDATA[
+		.square {
+			fill: #f2f2f2;
+			stroke: #ddd;
+			stroke-width: 4px;
+		}
+	]]></style>
+	<style></style>
 
-  <title>Title</title>
-  <desc>Description</desc>
+	<!-- This is Title-->
+	<title>Title</title>
+	<desc>Description</desc>
+	<defs></defs>
+	<g></g>
 
-  <g>
-    <rect class="square" x="4" y="4" width="120" height="120"></rect>
-    <rect x="16" y="16" width="96" height="96" fill="#ccc"></rect>
-    <rect x="32" y="32" width="64" height="64" style="fill: #ddd; stroke-width: 2px; stroke: #f2f2f2;"></rect>
-  </g>
+	<g>
+		<!-- This is Group-->
+		<rect class="square" x="4" y="4" width="120" height="120"></rect>
+		<rect x="16" y="16" width="96" height="96" fill="#ccc"></rect>
+		<rect x="32" y="32" width="64" height="64" style="fill: #ddd; stroke-width: 2px; stroke: #f2f2f2;"></rect>
+	</g>
 
 </svg>

@@ -1,13 +1,13 @@
 {
-  "compilerOptions": {
-    "target": "es2015",
-    "module": "commonjs",
-    "moduleResolution": "classic",
-    "outDir": "out",
-    "noLib": false,
-    "noImplicitAny": false,
-    "experimentalDecorators": true,
-    "removeComments": true,
-    "declaration": false
-  }
+	"compilerOptions": {
+		"target": "es6",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"rootDir": "src",
+		"outDir": "out",
+		"forceConsistentCasingInFileNames": true,
+		"pretty": true,
+		"removeComments": true,
+		"declaration": true
+	}
 }

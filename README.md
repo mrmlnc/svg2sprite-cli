@@ -18,23 +18,16 @@ Usage
 
 Common options
   --ignore, -d  glob-patterns for files that will not be added to the sprite.
-  --rootAttributes, -r  The attributes that will be added to the root svg tag.
   --inline, -i  If you want to embed the sprite into your HTML source, you will want to set this to true in order to prevent the creation of SVG namespace declarations and to set some other attributes for effectively hiding the library sprite.
-  --iconAttributes, -a  The attributes of each icon. Current attribute values will be overwritten.
   --iconPrefix, -p  The name prefix for each icon.
   --iconSuffix, -s  The name suffix for each icon.
 
 Clean options
-  --clean Use all strip* options without 'stripViewBox', 'stripStyles' and 'stripFill'
-  --stripComment  Strip <!-- * -->
-  --stripEmptyDefinition  Strip empty <defs></defs>
-  --stripEmptyGroup  Strip empty <g></g>
-  --stripTitle  Strip <title>*</title>
-  --stripDescription  Strip <desc>*</desc>
-  --stripExtraAttributes  Strip Sketch and xmlns:* attributes
-  --stripViewBox  Strip viewBox attributes
-  --stripStyles  'stripFill' option and strip all 'style' attributes
-  --stripFill  Strip 'fill' attribute (fill="") or fill in the 'style' attribute (style="fill:*;")
+  --stripEmptyTags  Removes empty tags such as "defs" or "g".
+  --stripTags  Removes tags, that are listed in this list.
+  --stripAttrs  Removes attributes, that are listed in this list.
+  --stripExtraAttrs  Removes "Sketch" and "xmlns:*" attributes.
+  --stripStyles  Removes "style" attributes from SVG definitions, or a list of the properties that will be removed from style tag and atrribute.
 
 Examples
   $ svg2sprite images/svg out/sprite.svg --ignore rainbow.svg --iconPrefix=prefix
@@ -43,6 +36,7 @@ Examples
 ## Related
 
   * [svg2sprite](https://github.com/mrmlnc/svg2sprite)
+  * [yellfy-svg-sprite](https://github.com/mrmlnc/yellfy-svg-sprite) - svg2sprite wrapper for easy integration into the development process.
 
 ## Changelog
 
