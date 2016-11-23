@@ -67,7 +67,7 @@ if (cli.flags.ignore) {
 } else {
 	cli.flags.ignore = ['!*.svg'];
 }
-console.log(cli.flags);
+
 const sprite = svgSprite.collection(cli.flags);
 let stats = 0;
 
