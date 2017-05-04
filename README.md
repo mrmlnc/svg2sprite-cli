@@ -1,5 +1,7 @@
 # svg2sprite-cli
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mrmlnc/svg2sprite-cli.svg)](https://greenkeeper.io/)
+
 > CLI interface for [svg2sprite](https://github.com/mrmlnc/svg2sprite).
 
 [![Travis Status](https://travis-ci.org/mrmlnc/svg2sprite-cli.svg?branch=master)](https://travis-ci.org/mrmlnc/svg2sprite-cli)
