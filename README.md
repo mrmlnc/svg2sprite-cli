@@ -26,6 +26,8 @@ Clean options
   --stripEmptyTags  Removes empty tags such as "defs" or "g".
   --stripTags  Removes tags, that are listed in this list.
   --stripAttrs  Removes attributes, that are listed in this list.
+  				Should be repeated for every item, for example:
+					svg2sprite <source-directory> <dist-file> --stripAttrs id --stripAttrs viewBox --stripAttrs x  --stripAttrs y --stripAttrs width --stripAttrs height
   --stripExtraAttrs  Removes "Sketch" and "xmlns:*" attributes.
   --stripStyles  Removes "style" attributes from SVG definitions, or a list of the properties that will be removed from style tag and atrribute.
 
