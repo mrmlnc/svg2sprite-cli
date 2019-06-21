@@ -25,6 +25,7 @@ const cli = <any>meow(`
 		--inline, -i  If you want to embed the sprite into your HTML source, you will want to set this to true in order to prevent the creation of SVG namespace declarations and to set some other attributes for effectively hiding the library sprite.
 		--iconPrefix, -p  The name prefix for each icon.
 		--iconSuffix, -s  The name suffix for each icon.
+		--deepId, -e  id of an icon is the path to that icon from <source-directory>.
 
 	Clean options
 		--stripEmptyTags  Removes empty tags such as "defs" or "g".
@@ -43,7 +44,8 @@ const cli = <any>meow(`
 		d: 'ignore',
 		i: 'inline',
 		p: 'iconPrefix',
-		s: 'iconSuffix'
+		s: 'iconSuffix',
+		e: 'deepId'
 	}
 });
 
@@ -82,9 +84,9 @@ log('Created spriter instance');
 readdirP(cli.input[0], cli.flags.ignore).then((files) => {
 	log('Read directory...');
 
-	files = files.map((filename) => {
+	files = files.sort().map((filename) => {
 		return readFileP(filename, 'utf-8').then((content) => {
-			const name = path.basename(filename, '.svg');
+			const name = cli.flags.deepId ? path.relative(cli.input[0], filename).replace(/\.svg$/, '') : path.basename(filename, '.svg');
 			sprite.add(name, content);
 			stats++;
 		});

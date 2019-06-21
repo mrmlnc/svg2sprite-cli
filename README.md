@@ -21,6 +21,7 @@ Common options
   --inline, -i  If you want to embed the sprite into your HTML source, you will want to set this to true in order to prevent the creation of SVG namespace declarations and to set some other attributes for effectively hiding the library sprite.
   --iconPrefix, -p  The name prefix for each icon.
   --iconSuffix, -s  The name suffix for each icon.
+  --deepId, -e  id of an icon is the path to that icon from <source-directory>.
 
 Clean options
   --stripEmptyTags  Removes empty tags such as "defs" or "g".
